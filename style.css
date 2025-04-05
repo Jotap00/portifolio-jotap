@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ebf9fc;
+    color: #333;
+    line-height: 1.8;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #327ad8;  /* Cor de fundo  */
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* Estilizando as seções */
+section {
+    text-align: justify;
+    text-indent: 2px;
+    padding: 40px 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título das seções */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1a73e8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1a73e8;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0c56b8;
+}
+
+/* Estilizando o formulário de contato */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+form button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #0c56b8;
+    transform: scale(1.05);
+}
+
+/* Estilizando o rodapé */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsividade: Ajuste para telas menores */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    /* Projetos: Ajustando para uma coluna em telas pequenas */
+    #projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto {
+        flex: 1 1 100%; /* Um item por linha */
+    }
+
+    form button {
+        width: 100%; /* Botão ocupa toda a largura disponível */
+    }
+}
+/* Adicionar a foto do perfil */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Imagens dos projetos */
+.imagem-projeto {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Estilo dos projetos */
+.projeto {
+    flex: 1 1 calc(50% - 30px);
+    background-color: #f3f4f6;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilizando a seção de fotos */
+#fotos {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#fotos h2 {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a galeria-container */
+.galeria-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Estilizando cada categoria dentro da galeria */
+.categoria h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.fotos-gatos, .fotos-desenhos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que as imagens fiquem em várias linhas, se necessário */
+    justify-content: center;
+}
+
+.imagem-gato, .imagem-desenho {
+    width: 350px;  /* Largura da imagem */
+    height: 350px;
+    object-fit: cover;  /* Ajusta a imagem para não distorcer */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-gato:hover, .imagem-desenho:hover {
+    transform: scale(1.05);  /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Responsividade: Ajustando para telas pequenas */
+@media (max-width: 768px) {
+    .fotos-gatos, .fotos-desenhos {
+        justify-content: center;
+    }
+
+    .imagem-gato, .imagem-desenho {
+        width: 180px;  /* Ajustando o tamanho das imagens em telas menores */
+        height: 180px;
+    }
+}

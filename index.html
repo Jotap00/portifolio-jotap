@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio JP</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Cabeçalho -->
+     <header>
+        <img src="minha-foto.jpeg" alt="Foto do João Paulo" class="foto-perfil">
+        <h1>João Paulo de Oliveira</h1>        
+        <p>Estudante de Analise e Desenvolvimento de sistemas na Uninter</p>
+
+    </header>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        
+        <h2>Sobre Mim</h2>
+        <p>Além de estar cursando ADS eu trabalho em uma Construtora do qual sou responsável pela gestão de catracas e governança sistêmica, gosto muito de gatos e passar um tempo com a familia, gosto bastante de doces e de andar de bicicleta em parques quando tenho tempo.</p>
+        <p2>Gestão de Catraca é basicamente acompanhar toda as fases da instalação de uma catraca que possui biometria facial em todas as obras da empresa, e Governança Sistêmica é acompanhar o sistema, pegar e reportar bugs e erros,realizar gestão de acessos, sugerir melhorias, fazer reuniões com o fornecedor para acompanhar tudo isso. </p2>
+        <ul>
+            <li>Habilidades: Administrativa, informatica, Power BI, Lançamentos de NFs no SAP, Desenhar, e estou aprendendo muitas coisas na faculdade. </li>
+            <li>Hobbies: Desenhar, Ler, Praticar atividades fisicas, Jogar jogos eletronicos, Assistir Series, filmes, Jogos de Futebol do Meu time </li>
+        </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>        
+        <div class="projeto">
+            <img src="projeto1.jpeg" alt="Imagem do Projeto 1" class="imagem-projeto">
+            <h3>Projeto 1: Desenvolver Dashboards no Power BI Desktop </h3>
+            <p>Atualmente eu tenho estudado power BI da Microsof para desenvoler Dashboards utilizando os relatórios fornecidos pelos dois sistemas que utilizamos na area que trabalho dentro da empresa, apenas desenvolvi um Dashboard de analise de performance, onde cada equipe consegue enxergar seus numeros e desempenho diariamente</p>
+            <a href="#">Ver mais</a>
+        </div>
+      
+    </section>
+
+
+    <!-- Fotos -->
+    <section id="fotos">
+        <h2>Fotos</h2>
+        <div class="galeria-container">
+            <!-- Fotos dos gatos -->
+            <div class="categoria">
+                <h3>Meu Gato</h3>
+                <div class="fotos-gatos">
+                    <img src="gato-foto1.jpeg" alt="Foto do Gato 1" class="imagem-gato">
+                    <img src="gato-foto2.jpeg" alt="Foto do Gato 2" class="imagem-gato">
+                                    </div>
+            </div>
+            
+            <!-- Fotos dos desenhos -->
+            <div class="categoria">
+                <h3>Meus Desenhos</h3>
+                <div class="fotos-desenhos">
+                    <img src="desenho-1.jpeg" alt="Desenho 1" class="imagem-desenho">
+                    <img src="desenho-2.jpeg" alt="Desenho 2" class="imagem-desenho">
+                    <img src="desenho-3.jpeg" alt="Desenho 3" class="imagem-desenho">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit" id="btn-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 João Paulo de Oliveira - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="botao.js"></script>
+</body>
+</html>
